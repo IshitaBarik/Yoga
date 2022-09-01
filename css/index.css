@@ -1,0 +1,1258 @@
+body{
+    margin:0; 
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    font-size: 16px;
+    list-style: none;
+}
+.addAnimation{
+    animation:anime 2s ease-in-out infinite;
+}
+.container-fluid{
+    overflow: hidden;
+}
+@keyframes anime{
+    0% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+/*Navigation starts*/
+ul{
+    padding-left: 0;
+}
+.bigbox{
+    padding:33px 80px;
+}
+#navigation{
+    width:100%;
+    position: fixed;
+    z-index: 10000;
+    background-color: #fff;
+    top:0;
+    left: 0;
+}
+.menu{
+    display: flex;
+}
+nav #hamburger , nav #hamburger2{
+    z-index: 10;
+    cursor:pointer;
+}
+nav #hamburger2{
+    position: absolute;
+    top:20px;
+    right: 110px;
+}
+#navbar-collapse.opened-navigation{
+    right: 0;
+}
+#navbar-collapse{
+    position: fixed;
+    top:0;
+    right: -800px;
+    width:75vh;
+    height: 100vh;
+    background-color: #000;
+    overflow: auto;
+    padding: 70px 0;
+    transition: 1s;
+}
+#navbar-collapse li{
+    margin: 30px 90px;
+}
+#navigation a{
+    color:#000;
+    text-decoration: none;
+}
+#navigation #navbar-collapse .list a{
+    color:#fff;
+    font-size: 0.8rem;
+}
+#navigation #navbar-collapse .list a:hover{
+    color:#555;
+    transition: 1s;
+}
+nav .item a{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+nav .item li{
+    display: inline-block;
+}
+nav .item li a{
+    display: block;
+    padding: 8px 10px;
+    line-height: 40px;
+    font-size: 0.75rem;
+    transition: .5s;
+}
+.menu > li > ul{
+    opacity: 0;
+    position: absolute;
+    left:-10px;
+}
+.menu > li{
+    position: relative;
+    margin-right: 20px;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    transition: .3s linear;
+    background-color: #fff;
+}
+nav ul ul li{
+    width: 140px;
+    display: list-item;
+}
+nav .NestedMenu >li > ul{
+    opacity: 0;
+    position: absolute;
+    left:100px;
+    top:20px;
+}
+nav .NestedMenu > li > ul >li:hover{
+    opacity: 1;
+    transition: 1s;
+}
+.menu > li > ul > li{
+    position: relative;
+}
+.menu > li > ul > li .nesteddropdownmenu::after{
+    position: absolute;
+    content: '';
+    width:7px;
+    height: 7px;
+    display: block;
+    right: 40px;
+    top: 45%;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    transform: rotate(45deg);
+}
+nav .items{
+    position: relative;
+}
+.items .fa{
+    opacity: 0;
+    position: absolute;
+}
+.items:hover .fa{
+    opacity: 1;
+    position: unset;
+    transition: 1s;
+}
+nav .items2{
+    position: relative;
+}
+.items2 .fa{
+    opacity: 0;
+    position: absolute;
+}
+.items2:hover .fa{
+    opacity: 1;
+    position: unset;
+    transition: 1s;
+}
+.items3{
+    position: relative;
+}
+.items3 .fa{
+    opacity: 0;
+    position: absolute;
+}
+.items3:hover .fa{
+    opacity: 1;
+    position: unset;
+    transition: .3s;
+}
+.search-box{
+    position: relative;
+    width:280px;
+    height: 40px;
+    border-radius: 60px;
+    border-bottom: 1px solid #fff;
+    padding: 2px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+[type=search] {
+    outline-offset: 0px;
+}
+.search-box .sfrm{
+    width:82%;
+    color:#fff;
+    padding-left: 10px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+.fa-star{
+    font-size: 0.7rem;
+}
+.fa-search{
+    position: absolute;
+    right: 3%;
+    top:10%;
+    padding: 8px;
+    color:#fff;
+}
+.fa-microphone{
+    position: absolute;
+    right: 12%;
+    top:10%;
+    padding: 8px;
+    color:#fff;
+}
+#navigation .image img{
+    width:34%;
+}
+li.item:hover .items{
+    display: block;
+}
+.fa-close{
+    color:#fff;
+}
+.first .fa-bars , .fa-times{
+    display:none;
+}
+#navigation2{
+    display: none;
+}
+/*navigation ends*/
+
+/*Banner starts*/
+.banner{
+    position: relative;
+    padding: 160px 0 55px;
+}
+.banner .banner-img .img-1{
+    width:82%;
+}
+.banner .banner-img .img-2{
+    width:10%;
+    position: absolute;
+    top:70%;
+    left:10%;
+}
+.banner .banner-text h1{
+    margin-top: 137px;
+    line-height: 85px;
+    margin-left: 40px;
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: #484e5a;
+}
+.banner .banner-text p{
+    font-size: 1.2rem;
+    color: #484e5a;
+    margin:40px 0px 40px 40px;
+}
+.banner .banner-text .right-top{
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+.banner .banner-text .right-top img:nth-child(1) {
+    position: absolute;
+}
+.banner .banner-text .right-bottom{
+    bottom: 0px;
+}
+.banner .banner-text .right-bottom img:nth-child(1) {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.banner .banner-text .right-bottom img:nth-child(2) {
+    position: absolute;
+    right:20px;
+    bottom: 0px;
+}
+.banner .banner-text .right-bottom img:nth-child(3) {
+    position: absolute;
+    right:20px;
+    bottom: 0px;
+}
+.banner-btn{
+    width:150px;
+    height:50px;
+    border:none;
+    background-color: #f0c9c3;
+    color: #484e5a;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-left: 40px;
+    transition: all 0.3s ease-in;
+}
+.banner-btn:hover{
+    transform: skew(-10deg);
+    background-color: transparent;
+    border: 3px solid #f0c9c3;
+}
+/*Banner ends*/
+
+/*About starts*/
+.pregnancy-about{
+    background-image: url("../img/about-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 150px 0;
+}
+.pregnancy-about  h1 {
+    font-size: 3rem;
+    color: #484e5a;
+    margin-left: 120px;
+}
+.pregnancy-about p{
+    font-size: 1.2rem;
+    margin: 50px 0;
+    margin-left: 120px;
+}
+.pregnancy-about button{
+    margin-left: 120px;
+}
+/* About ends */
+
+/* blog area starts */
+.blog{
+    padding: 50px 0;
+}
+.blog .row{
+    justify-content: center;
+    align-items: center;
+}
+.blog-img img{
+    width: 50%;
+}
+.blog img:nth-child(1){
+    position: absolute;
+    z-index: -1;
+}
+.blog h2{
+    color:#000;
+    margin-top: 40px;
+}
+.blog p{
+    padding: 0 70px;
+    color:#484e5a;
+}
+.blog .img-3{
+    width:15%;
+}
+.blog .blog-image{
+    transition: all 0.5s ease-in;
+}
+.blog .blog-image:hover{
+    transform: rotateY(50deg);
+}
+/* blog area ends */
+
+/* pranayama area starts */
+.pranayama{
+    position: relative;
+    padding: 120px 0;
+}
+.pranayama-top-image{
+    width:30%;
+    position: relative;
+}
+.pranayama-top-image img:nth-child(2){
+    position: absolute;
+    width:55%;
+    top:0px;
+    left:0;
+}
+.pranayama-top-image img:nth-child(1){
+    width: 55%;
+}
+.pranayama-text h1 {
+    font-size: 3rem;
+    color: #484e5a;
+    padding:40px 120px;
+}
+.pranayama-text p {
+    font-size: 1rem;
+    color: #484e5a;
+    padding:0px 50px 20px 120px;
+}
+.pranayama-text button{
+    margin-left: 120px;
+}
+.pranayama-bottom-image{
+    width:30%;
+    position: relative;
+}
+.pranayama-bottom-image img:nth-child(1){
+    width: 60%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top:50px;
+}
+.pranayama-bottom-image img:nth-child(2){
+    width: 30%;
+    left: 60px;
+    position: absolute;
+    top: 60px;
+}
+.pranayama-image-area{
+    position: relative;
+}
+.pranayama-image-area .p-img{
+    width: 80%;
+}
+.pranayama-image-area .frame-side .pranayama-right-top-image-1{
+    position: absolute;
+    top: -30px;
+    left: -15px;
+    z-index: -1;
+}
+.pranayama-right-top-image-1 img:nth-child(1){
+    width: 30%;
+    position: absolute;
+}
+.pranayama-right-top-image-1 img:nth-child(2){
+    width: 90%;
+}
+.pranayama-image-area .frame-side .pranayama-right-top-image-2{
+    position: absolute;
+    top:-60px;
+    right:-5px;
+    z-index: -2;
+}
+.pranayama-right-top-image-2 img:nth-child(1){
+    position: absolute;
+    top:-10px;
+    left:15px;
+    width: 75%;
+}
+.pranayama-right-top-image-2 img:nth-child(2){
+    width: 70%;
+}
+.pranayama-image-area .frame-side .pranayama-right-bottom-image-3{
+    position: absolute;
+    bottom: 0px;
+}
+.pranayama-right-bottom-image-3 img:nth-child(1){
+    width: 100%;
+}
+.pranayama-image-area .frame-side .pranayama-right-bottom-image-4{
+    position: absolute;
+    bottom: -20px;
+    right: 250px;
+}
+.pranayama-right-bottom-image-4 img:nth-child(1){
+   position: absolute;
+   bottom: 0;
+   width:150px;
+}
+.pranayama-right-bottom-image-4 img:nth-child(2){
+    position: absolute;
+    bottom: -60px;
+    width: 250px;
+    transform: rotate(80deg);
+    z-index: -2;
+}
+/* pranayama area ends */
+
+/* Discount area starts */
+.discount{
+    background-image: url(../img/event-img.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 100px 0;
+    background-color: #f3f1ef;
+    min-height: 70vh;
+    overflow: hidden;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.discount  h1 {
+    font-size: 3rem;
+    color: #484e5a;
+    margin-top: 50px;
+}
+.discount p{
+    font-size: 1rem;
+    padding: 40px 120px 40px 0px;
+}
+.discount button{
+    margin-left: 0px;
+}
+/* Discount area ends */
+
+/* Gallery section starts */
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.55)!important;
+}
+.Gallery{
+    position: relative;
+    overflow:hidden;
+    padding: 100px 0 ;
+}
+.gallerySectionImages{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    z-index: -1;
+    height: 100%;
+}
+.gallerySectionImages .topLeft{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.gallerySectionImages .topLeft img:nth-child(1){
+    position: absolute;
+    top:100px;
+    left: 70px;
+}
+.gallerySectionImages .topLeft img:nth-child(2){
+    position: absolute;
+    top:100px;
+    left: 70px;
+    width:80px;
+}
+.gallerySectionImages .topRight{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.gallerySectionImages .topRight img:nth-child(1){
+    top:-35px;
+    right: 0px;
+    position: absolute;
+}
+.gallerySectionImages .topRight img:nth-child(2){
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.gallerySectionImages .topRight img:nth-child(3){
+    position: absolute;
+    top:70px;
+    right: -10px;
+}
+.gallerySectionImages .bottomLeft{
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+}
+.gallerySectionImages .bottomLeft img:nth-child(1){
+    position: absolute;
+    left: -10px;
+}
+.gallerySectionImages .bottomRight{
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+}
+.gallerySectionImages .bottomRight img:nth-child(2){
+   position: absolute;
+   bottom: -10px;
+   right: 0px;
+}
+.gallery-sec img{
+    width: 100%;
+}
+.gallerySectionText{
+    padding: 0 140px;
+}
+.gallerySectionText .gallery-sec{
+    margin: 60px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.gallery-sec h2 {
+    font-size: 1.5rem;
+    color: #484e5a;
+    margin:20px 0 ;
+}
+.gallery-sec p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0 10px;
+    font-size: 0.9rem;
+}
+/* Gallery area ends */
+
+/* yogaTraining area starts */
+.yogaTraining{
+    padding: 100px 0;
+    background-color: #f0c9c3;
+    color:#484e5a;
+}
+.yogaTraining h1{
+    font-size: 2.8rem;
+    margin-top: 50px;
+    padding-right: 130px;
+}
+.yogaTraining p{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 30px 0;
+}
+a{
+    text-decoration: none;
+}
+.videosec{
+    position: relative;
+}
+.videosec img{
+    width:80%;
+}
+.videosec .playButton{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+.playButton .fa-play{
+    font-size: 3rem;
+}
+.socialMedia i{
+    font-size: 2.3rem;
+    padding-right: 30px;
+    color:#484e5a;
+}
+/* yogaTraining area ends */
+
+/* Form area starts */
+.GetItTouch{
+    position: relative;
+    overflow: hidden;
+    padding: 100px 150px;
+}
+.my-3 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
+}
+.GetItTouch h2 {
+    font-size: 3.5rem;
+    color:#484e5a
+}
+.GetItTouch p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #484e5a;
+    margin: 30px 0;
+}
+/* Form area ends */
+
+/* footer starts */
+footer {
+    padding: 50px 0;
+    background-color: #484e5a;
+    color: #fff;
+}
+
+footer h4 {
+    margin-bottom: 40px;
+}
+
+footer h4+p {
+    margin-bottom: 40px;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+/* footer ends */
+@media only screen and (max-width:1024px){
+
+.banner .banner-text h1 {
+    font-size: 3.5rem;
+    }
+    .blog p {
+        padding: 0 20px;
+    }
+    .pranayama-text h1 {
+        padding: 0px 10px 40px 100px;
+    }
+    .pranayama-text p {
+        padding: 0px 0px 20px 100px;
+    }
+    .pranayama-text button {
+        margin-left: 100px;
+    }
+    .pranayama-right-top-image-1 img:nth-child(1) {
+        width: 25%;
+    }
+    .pranayama-right-top-image-1 img:nth-child(2) {
+        width: 100%;
+    }
+    .pranayama-right-bottom-image-3 img:nth-child(1) {
+        width: 80%;
+    }
+    .pranayama-right-top-image-2 img:nth-child(1) {
+        width: 70%;
+    }
+    .pranayama-bottom-image img:nth-child(1) {
+        width: 90%;
+    }
+    .pranayama-bottom-image img:nth-child(2) {
+        width: 45%;
+        left: 70px;
+        top: 50px;
+    }
+    .discount h1 {
+        font-size: 2.4rem;
+        margin-top: 0px;
+    }
+    .discount p {
+        font-size: 1rem;
+        padding: 40px 10px 40px 0px;
+    }
+    .gallerySectionText {
+        padding: 0 10px;
+    }
+}
+@media only screen and (max-width:768px){
+    .banner {
+        padding-top: 0px;
+    }
+    .banner .banner-text .right-top img:nth-child(1) {
+        width: 100%;
+    }
+    .banner .banner-text .right-top img:nth-child(2) {
+        width: 100%;
+    }
+    .banner .banner-text .right-bottom .img-fluid {
+        width:20%;
+    }
+    .banner .banner-text h1 {
+        font-size: 2.7rem;
+        margin-top: 17px;
+    }
+    .banner .banner-text p {
+        font-size: 1rem;
+    }
+    .banner .banner-img .img-1 {
+        width: 70%;
+    }
+    .banner .banner-img .img-1 {
+        width: 65%;
+        margin-left: 15%;
+    }
+    .banner .banner-img .img-2 {
+        top: 75%;
+        left: 25%;
+    }
+    #navigation{
+        display: none;
+    }
+    .pranayama-text button {
+        margin-bottom: 50px;
+    }
+    #navigation2{
+        display: block;
+    }
+    .navbar-brand {
+        width: 60%;
+    }
+    img{
+        width:40%;
+    }
+    .navbar-light .navbar-toggler {
+        border: none;
+        color: #fff;
+    }
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .dropdown-menu {
+        background-color: #fff;
+        border:none;
+    }
+    .dropdown-item {
+        font-size: 0.9rem;
+        padding: 20px 10px;
+    }
+    .dropdown-menu li{
+        border-bottom: 1px solid #000;
+    }
+    nav ul ul li {
+        width: 300px;
+    }
+    .dropdown-item.active, .dropdown-item:active {
+        background-color: transparent;
+    }
+    .dropdown-menu li:last-child{
+        border-bottom: 0px;
+    }
+    .banner .banner-text .right-bottom img:nth-child(1) {
+        bottom: 0;
+    }
+    .banner .banner-text .right-bottom img:nth-child(2) {
+        bottom: 0;
+    }
+    .banner .banner-text .right-bottom img:nth-child(3) {
+        bottom: 0;
+    }
+    .pregnancy-about h1 {
+        font-size: 2.8rem;
+        margin-left: 30px;
+    }
+    .pregnancy-about p {
+        font-size: 1rem;
+        margin: 50px 130px 50px 30px;
+    }
+    .pregnancy-about button {
+        margin-left: 30px;
+    }
+    .blog .img-3 {
+        width: 35%;
+    }
+    .blog p {
+        margin-bottom: 120px;
+    }
+    .pranayama {
+        padding: 0px 0px 120px;
+    }
+    .pranayama-image-area {
+        margin-top: 300px;
+    }
+    .pranayama-bottom-image img:nth-child(1) {
+        top: 10px;
+    }
+    .pranayama-bottom-image img:nth-child(2) {
+        left: 80px;
+        top: 0px;
+    }
+    .discount h1 {
+        font-size: 2rem;
+        color: #484e5a;
+        margin-top:0px;
+    }
+    .discount p {
+        font-size: 0.8rem;
+        padding: 40px 0px 20px 0px;
+    }
+    .gallerySectionText {
+        padding: 0 50px;
+    }
+    .gallery-sec h2 {
+        font-size: 2rem;
+    }
+    .gallery-sec p {
+        padding: 0 50px;
+    }
+    .gallerySectionText h1 {
+        font-size: calc(1.375rem + 3vw);
+    }
+    .gallerySectionImages .topLeft img:nth-child(1) {
+        width: 220px;
+    }
+    .gallerySectionImages .topRight img:nth-child(1) {
+        width: 200px;
+    }
+    .gallerySectionImages .topRight img:nth-child(2) {
+        width: 130px;
+    }
+    .gallerySectionImages .topRight img:nth-child(3) {
+        width: 60px;
+    }
+    .gallerySectionImages .bottomLeft {
+        bottom: 80px;
+    }
+    .gallerySectionImages .bottomLeft img:nth-child(1) {
+        width: 290px;
+    }
+    .gallerySectionImages .bottomLeft img:nth-child(2) {
+        width: 190px;
+    }
+    .gallerySectionImages .bottomRight img:nth-child(1) {
+        width:190px;
+    }
+    .gallerySectionImages .bottomRight img:nth-child(2) {
+        width:190px;
+    }
+    .yogaTraining h1 {
+        font-size: 2.2rem;
+        padding-right:0px;
+    }
+    .yogaTraining p {
+        padding: 30px 100px;
+    }
+    .text{
+        text-align: center;
+    }
+    .GetItTouch {
+        padding: 100px 0px;
+    }
+}
+@media only screen and (max-width:425px){
+    .banner .banner-text h1 {
+        font-size: 1.5rem;
+        margin-top: 5px;
+        line-height: 30px;
+    }
+    .banner .banner-text p {
+        font-size: 0.9rem;
+    }
+    .banner .banner-img .img-1 {
+        width: 75%;
+    }
+    .banner .banner-img .img-2 {
+        top: 80%;
+        left: 35%;
+    }
+    .banner-btn {
+        width: 130px;
+        height: 40px;
+        font-size: 0.7rem;
+    }
+    img {
+        width: 42%;
+    }
+    .navbar-toggler-icon {
+        width: 1.3em;
+        height: 0.9em;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+    .dropdown-item {
+        font-size: 0.80rem;
+        padding: 10px;
+    }
+    .pregnancy-about h1 {
+        font-size: 1.9rem;
+    }
+    .pregnancy-about p {
+        font-size: 0.9rem;
+        margin: 20px 30px 50px 30px;
+    }
+    .blog p {
+        padding: 0 20px;
+    }
+    .pranayama-text h1 {
+        font-size: 2rem;
+    }
+    .pranayama-text p {
+        line-height: 30px;
+    }
+    .pranayama-bottom-image img:nth-child(2) {
+        left: 60px;
+    }
+    .pranayama-right-top-image-1 img:nth-child(1) {
+        width: 20%;
+    }
+    .pranayama-right-top-image-1 img:nth-child(2) {
+        width: 80%;
+    }.pranayama-right-top-image-2 img:nth-child(1) {
+        width: 50%;
+        top: 0px;
+        left: 70px;
+    }
+    .pranayama-right-bottom-image-3 img:nth-child(1) {
+        width: 70%;
+    }
+    .discount{
+        background-position: right;
+    }
+    .discount h1 {
+        font-size: 1.8rem;
+        padding-left: 20px;
+    }
+    .discount p {
+        padding: 40px 30px 20px 20px;
+    }
+    .discount button {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .gallerySectionImages .topLeft img:nth-child(1) {
+        width: 200px;
+        left: 10px;
+    }
+    .gallerySectionImages .topLeft img:nth-child(2) {
+        left: 0px;
+    }
+    .gallerySectionImages .topRight img:nth-child(1) {
+        width: 150px;
+    }
+    .gallerySectionImages .topRight img:nth-child(2) {
+        width: 90px;
+    }
+    .gallerySectionImages .topRight img:nth-child(3) {
+        width: 40px;
+    }
+    .gallery-sec p {
+        padding: 0 15px;
+        font-size: 0.8rem;
+    }
+    .gallery-sec h2 {
+        font-size: 1.3rem;
+    }
+    .gallerySectionText {
+        padding: 0 0px;
+    }
+    .gallerySectionText .gallery-sec {
+        margin: 30px 30px;
+    }
+    .gallerySectionImages .bottomLeft img:nth-child(1) {
+        width: 180px;
+    }
+    .gallerySectionImages .bottomLeft img:nth-child(2) {
+        width: 150px;
+    }
+    .gallerySectionImages .bottomRight img:nth-child(1) {
+        width: 160px;
+    }
+    .gallerySectionImages .bottomRight img:nth-child(2) {
+        width: 160px;
+    }
+    .gallerySectionImages .bottomLeft {
+        bottom: 40px;
+    }
+    .playButton .fa-play {
+        font-size: 3rem;
+    }
+    .yogaTraining h1 {
+        font-size: 1.8rem;
+    }
+    .yogaTraining p {
+        font-size: 0.90rem;
+        padding: 20px 30px;
+    }
+    .socialMedia i {
+        font-size: 2rem;
+    }
+    .GetItTouch h2 {
+        font-size: 3rem;
+    }
+    .GetItTouch p {
+        font-size: 0.9rem;
+    }
+    .form-control {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    img {
+        width: 38%;
+    }
+    .navbar-toggler-icon {
+        width: 1.1em;
+        height: 0.9em;
+    }
+    .dropdown-item {
+        font-size: 0.75rem;
+    }
+    .pregnancy-about h1 {
+        font-size: 1.7rem;
+    }
+    .pregnancy-about p {
+        font-size: 0.8rem;
+        margin: 20px 30px 30px 30px;
+    }
+    .pranayama-text h1 {
+        font-size: 1.7rem;
+        line-height: 40px;
+        padding: 0px 10px 40px 0px;
+    }
+    .pranayama-text p {
+        font-size: 0.9rem;
+        padding: 0px 10px 40px 0px;
+    }
+    .blog p {
+        margin-bottom: 50px;
+        font-size: 0.8rem;
+    }
+    .pranayama-text button {
+        margin-left: 0px;
+    }
+    .pranayama-bottom-image img:nth-child(2) {
+        left: 50px;
+    }
+    .pranayama-right-bottom-image-4 img:nth-child(1) {
+        width: 100px;
+    }
+    .pranayama-right-bottom-image-4 img:nth-child(2) {
+        bottom: -90px;
+    }
+    .pranayama-image-area {
+        margin-top: 180px;
+    }
+    .pranayama-right-top-image-1 img:nth-child(1) {
+        width: 15%;
+    }
+    .discount h1 {
+        font-size: 1.5rem;
+    }
+    .discount p {
+        padding: 40px 25px 0px 20px;
+    }
+    .gallerySectionImages .topLeft img:nth-child(1) {
+        width: 150px;
+        left: 0px;
+    }
+    .gallerySectionImages .topLeft img:nth-child(2) {
+        width: 60px;
+    }
+    .gallerySectionImages .topRight img:nth-child(1) {
+        width: 130px;
+    }
+    .gallerySectionImages .topRight img:nth-child(2) {
+        width: 70px;
+    }
+    .gallerySectionImages .topRight img:nth-child(3) {
+        width: 30px;
+    }
+    .gallerySectionText p {
+        font-size: 0.80rem;
+    }
+    .gallery-sec p {
+        padding: 0 5px;
+        font-size: 0.7rem;
+    }
+    .gallery-sec h2 {
+        font-size: 1.1rem;
+        margin: 10px 0;
+    }
+    .gallerySectionImages .bottomLeft img:nth-child(1) {
+        width: 100px;
+    }
+    .gallerySectionImages .bottomLeft {
+        bottom: 10px;
+    }
+    .gallerySectionImages .bottomLeft img:nth-child(2) {
+        width: 120px;
+    }
+    .gallerySectionImages .bottomRight img:nth-child(1) {
+        width: 120px;
+    }
+    .gallerySectionImages .bottomRight img:nth-child(2) {
+        width: 120px;
+    }
+    .playButton .fa-play {
+        font-size: 2.5rem;
+    }
+    .yogaTraining h1 {
+        font-size: 1.6rem;
+    }
+    .yogaTraining p {
+        font-size: 0.8rem;
+    }
+    .socialMedia i {
+        font-size: 1.6rem;
+        padding-right: 20px;
+    }
+    .GetItTouch h2 {
+        font-size: 2.5rem;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    .navbar {
+        padding: 0;
+    }
+    .navbar-toggler-icon {
+        width: 1em;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.8rem;
+    }
+    .dropdown-item {
+        font-size: 0.7rem;
+    }
+    .navbar-brand{
+        width:60%;
+    }
+    .banner .banner-text h1 {
+        font-size: 1.1rem;
+        margin-left: 20px;
+    }
+    .banner .banner-text p {
+        font-size: 0.7rem;
+        margin: 40px 0px 40px 20px;
+    }
+    .banner-btn{
+        margin-left: 20px;
+        font-size: 0.6rem;
+    }
+    .banner .banner-img .img-2 {
+        top: 90%;
+    }
+    .pranayama-top-image img:nth-child(1) {
+        width: 75%;
+    }
+    .pranayama-top-image img:nth-child(2) {
+        width: 75%;
+    }
+    .discount h1 {
+        font-size: 1.3rem;
+    }
+    .discount {
+        padding: 50px 0;
+    }
+    .discount p {
+        padding: 20px 25px 0px 20px;
+    }
+    .form-control {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:320px){
+    .pranayama-text p {
+        font-size: 0.8rem;
+        padding: 0px 10px 30px 0px;
+    }
+    .pranayama-text p {
+        line-height: 20px;
+    }
+    .blog {
+        padding: 0px 0;
+    }
+    .pregnancy-about h1 {
+        font-size: 1.3rem;
+        margin-left: 0px;
+    }
+    .pregnancy-about p {
+        margin: 20px 15px 30px;
+    }
+    .yogaTraining h1 {
+        font-size: 1.3rem;
+    }
+}
+
+
